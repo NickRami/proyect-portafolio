@@ -1,0 +1,339 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/*ESTILOS GENERALES*/
+
+
+#container { 
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225,225,226,0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    min-height: 600px;
+}
+
+#header { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid  rgba(225,225,226,0.8);
+
+}
+
+
+.logo { 
+   flex-basis: 65%;
+   flex-grow: 1;
+   margin-left: 15px;
+   padding: 5px;
+   color: black;
+   text-shadow: 1px 1px 0px #ccc;
+   text-transform: uppercase;
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   font-weight: 900;
+   font-size: 35px; 
+}
+
+.logo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px; 
+    
+}
+
+#menu { 
+    flex-grow: 1;
+    flex-basis: 30%;
+    height: 100%;
+    padding-right: 8px;
+    
+}
+
+#menu > ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+  
+    list-style: none;
+    height: 100%;
+}
+
+#menu ul li:first-child a{
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+#menu a { 
+    text-transform: uppercase;
+    color: #444;
+    padding: 15px;
+    font-style: italic;
+    transition: all 300ms;
+}
+
+#menu a:hover { 
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    color: white;
+    
+}
+
+/**/
+
+#content { 
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#proyects { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 80%;
+    
+}
+
+.proyect { 
+    flex-grow: 1;
+    flex-basis: 250px;
+    margin-bottom: 25px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    margin-right: 25px;
+    
+}
+
+.proyects {
+    border-radius: 50px 0px 0px 0px;
+}
+
+.proyect img {
+    width: 100%;
+    
+}
+
+.proyect-info { 
+    padding: 10px;
+    
+
+}
+
+.proyect-info a { 
+    font-size: 16px;
+    color: black;
+    transition: all 300ms;
+}
+
+.proyect-info a:hover { 
+    color: green;
+}
+
+.proyect-info p { 
+    color: grey;
+}
+
+#aside { 
+    display: flex;
+    flex-flow: column wrap;
+    flex-basis: 15%;
+    
+    margin-right: 30px;
+    padding: 15px;
+}
+
+#aside h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid  rgba(225,225,226,0.8); ;
+    text-align: center;
+}
+
+#aside ul {
+    list-style: none;
+
+}
+
+#aside ul li {
+    padding-bottom: 20px;
+}
+
+#aside ul li:first-child a{
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+}
+
+#aside ul li a { 
+    display: block;
+    text-align: center;
+    background-color: #eee;
+    color: #444;
+    text-transform: uppercase;
+    padding: 20px;
+    font-style: italic;
+    transition: all 400ms linear;
+
+}
+
+
+
+#aside a:hover { 
+   
+    color: rgb(255, 255, 255); 
+    box-shadow: 1px 1px 10px #b5afaf, 0px 0px 20px #eee, 0px 2px 30px #eee, 0px 2px 50px #eee;
+    background: #000046;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+#footer { 
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    border-top: 1px solid  rgba(225,225,226,0.8); ;
+    height: 120px;
+    align-items: center;
+}
+
+#footer .logo { 
+    opacity: 0.5;
+    flex-basis: auto;
+    flex-grow: 1;
+    order: 2;
+    text-align: right;
+    margin-right: 20px;
+    
+}
+
+#footer .info { 
+    flex-grow: 1;
+    order: 1;
+    margin-left: 20px;
+    color: #444;
+}
+
+
+ @media (max-width:1731px) {
+
+    #proyects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        flex-basis: 85%;
+    }
+
+    #menu a {
+       
+        padding: 11px;
+       
+    }
+}
+
+
+@media (max-width: 1715px) {
+    #proyects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        flex-basis: 85%;
+    }
+}
+
+
+@media (max-width:1705px) {
+    
+    #container{
+        width: 80%;
+    }
+
+
+    #proyects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        flex-basis: 80%;
+    }
+}
+
+@media (max-width: 1705px) {
+    #container{
+        width: 80%;
+    }
+    #proyects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        flex-basis: 60%;
+    }
+}
+
+@media (max-width:1690px) {
+    
+    #container{
+        width: 80%;
+    }
+
+    .logo h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-weight: 900;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    #menu {
+        flex-grow: 1;
+        flex-basis: 33%;
+        height: 100%;
+        padding-right: 8px;
+    }
+
+    #menu > ul {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        list-style: none;
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    #proyects {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        flex-basis: 61%;
+        
+        
+    }
+}
+
+
+     
